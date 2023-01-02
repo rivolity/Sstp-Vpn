@@ -16,7 +16,7 @@ and install the SSTP client
 sudo apt-get install sstp-client
 ```
 
-OPTIONAL: if your use the Network Manager utility you can also install the plugin for SSTP VPN as
+OPTIONAL: if your use the Network Manager utility you can also install the plugin for SSTP VPN by
 
 ```
 sudo apt-get install network-manager-sstp
@@ -67,6 +67,12 @@ method=auto
 
 [proxy]
 ```
+### Change configuration permission
+the connection that you've created should have permission 600
+```
+sudo chmod 600 /etc/NetworkManager/system-connections/*
+```
+
 ## Configuration of NetworkManager
 ### Create a Conf file
 This configuration file is meant to manage your **network interface**.
